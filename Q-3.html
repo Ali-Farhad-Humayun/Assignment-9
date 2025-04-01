@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-3 And A-3</title>
+    <style>
+        /* Example for grid-auto-rows */
+        .auto-rows-example {
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-auto-rows: 50px;
+        }
+        
+        /* Example for grid-auto-columns */
+        .auto-cols-example {
+            display: grid;
+            grid-template-rows: 100px 100px;
+            grid-auto-columns: 120px;
+        }
+    </style>
+</head>
+<body>
+    <h3>grid-auto-rows</h3>
+    <p>Defines the size of implicitly created rows (rows not defined in grid-template-rows).</p>
+    <div class="auto-rows-example">
+        <div style="background: lightblue;">Item 1</div>
+        <div style="background: lightgreen;">Item 2</div>
+        <div style="background: lightcoral;">Item 3 (auto row)</div>
+    </div>
+
+    <h3>grid-auto-columns</h3>
+    <p>Defines the size of implicitly created columns (columns not defined in grid-template-columns).</p>
+    <div class="auto-cols-example" style="grid-auto-flow: column;">
+        <div style="background: lightblue;">Item 1</div>
+        <div style="background: lightgreen;">Item 2</div>
+        <div style="background: lightcoral;">Item 3 (auto column)</div>
+    </div>
+</body>
+</html>

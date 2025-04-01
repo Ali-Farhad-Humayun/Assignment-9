@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-5 And A-5</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 100px 100px;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .box {
+            background: #2196F3;
+            color: white;
+            padding: 10px;
+        }
+        
+        /* justify-items example (container property) */
+        .justify-items-example {
+            justify-items: center;
+        }
+        
+        /* justify-self example (item property) */
+        .justify-self-example .special {
+            justify-self: end;
+        }
+    </style>
+</head>
+<body>
+    <h3>justify-items (container property)</h3>
+    <p>Aligns all grid items along the inline (row) axis within their cells</p>
+    <div class="container justify-items-example">
+        <div class="box">Item 1</div>
+        <div class="box">Item 2</div>
+        <div class="box">Item 3</div>
+        <div class="box">Item 4</div>
+    </div>
+
+    <h3>justify-self (item property)</h3>
+    <p>Aligns a single grid item along the inline (row) axis within its cell</p>
+    <div class="container justify-self-example">
+        <div class="box">Item 1</div>
+        <div class="box special">Item 2 (self-end)</div>
+        <div class="box">Item 3</div>
+        <div class="box">Item 4</div>
+    </div>
+</body>
+</html>
